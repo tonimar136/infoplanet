@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página em Construção</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.05);
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .loader {
+        width: 80px;
+        height: 80px;
+        border: 6px solid rgba(255,255,255,0.2);
+        border-top: 6px solid #00ffcc;
+        border-radius: 50%;
+        animation: spin 1.5s linear infinite;
+        margin: 0 auto 30px auto;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .countdown {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: #25d366;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        cursor: pointer;
+        transition: 0.3s;
+        animation: pulse 2s infinite;
+        text-decoration: none;
+    }
+
+    .whatsapp:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); }
+    }
+
+    .whatsapp img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="loader"></div>
+    <h1>Estamos Construindo 🚧</h1>
+    <p>Algo incrível está sendo preparado para você.<br>
+    Em breve estaremos online!</p>
+    <div class="countdown">Enquanto isso, fale conosco pelo WhatsApp 👇</div>
+</div>
+
+<a href="https://wa.me/5521985709645" target="_blank" class="whatsapp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<footer>
+    © 2026 - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
